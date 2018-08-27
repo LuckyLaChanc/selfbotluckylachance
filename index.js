@@ -2,9 +2,8 @@ const Discord = require('discord.js');
 const fs = require("fs");
 const client = new Discord.Client();
 var prefix = '++'
-var token = BOT_TOKEN
 
-client.login(token)
+client.login(BOT_TOKEN)
 
 client.on('ready', async () => {
     console.log("Connecté ;) ")
