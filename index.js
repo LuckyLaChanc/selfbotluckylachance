@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const fs = require("fs");
 const client = new Discord.Client();
 var prefix = '++'
-token = 'NDUwNzYzMjgxMjkzMTE1NDA0.DjxZCg.k-aC9IBnO-XLVWbHph97EqZLLU8'
+var token = BOT_TOKEN
 
 client.login(token)
 
