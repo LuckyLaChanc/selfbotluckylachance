@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const fs = require("fs");
 const client = new Discord.Client();
 var prefix = '++'
-token = process.env.BOT_TOKEN
+token = 'NDUwNzYzMjgxMjkzMTE1NDA0.DjxZCg.k-aC9IBnO-XLVWbHph97EqZLLU8'
 
 client.login(token)
 
