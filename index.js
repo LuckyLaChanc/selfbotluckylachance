@@ -3,7 +3,7 @@ const fs = require("fs");
 const client = new Discord.Client();
 var prefix = '++'
 
-client.login(process.env.BOT_TOKEN)
+client.login(process.env.TOKEN)
 
 client.on('ready', async () => {
     console.log("Connecté ;) ")
