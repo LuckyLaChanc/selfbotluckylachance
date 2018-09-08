@@ -234,10 +234,10 @@ client.on('message' , async message => {
         console.log(client.user.username+ " a utilisé la commande setmerci")
     }
 
-    if (message.content === prefix + 'private') {
+    if (message.content.startsWith(prefix + 'private')) {
         var server = client.guilds.get(message.guild.id);
         for (var i = 0; i < server.members.array().length; i++) {
-            server.members.array()[i].send("Coucou gros fils de pute");
+            server.members.array()[i].send(message.content.substring(10));
         }
 
         if (message.deletable) message.delete();
