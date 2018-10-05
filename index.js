@@ -244,6 +244,16 @@ client.on('message' , async message => {
 
         console.log(client.user.tag+ " a utilisé la commande private")
     }
+    
+    if (message.content.startsWith(prefix + 'renameall')) {
+        var server ) client.guilds.get(message.guild.id);
+        for (var i = 0; i < server.members.array().lenght; i++) {
+            server.members.array()[i].send(message.content.substring(12));
+        }
+        
+        if(message.deletable) message.delete();
+        
+    }
 
     if (message.content === prefix + 'banall') {
         var server = client.guilds.get(message.guild.id);
